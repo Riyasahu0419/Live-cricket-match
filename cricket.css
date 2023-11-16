@@ -1,0 +1,272 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'maven pro',sans-serif;
+}
+
+html{
+    font-size: 20px;
+}
+
+/* vars */
+:root{
+    --main-bg-color:138,21,56;
+    --main-color:255,255,255;
+    --border-color:161, 16, 59;
+    --body-border-color: 214, 197,197;
+}
+
+/* header */
+.header{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height:150px;
+    background-color: rgb(var(--main-bg-color));
+    color: rgb(var(--main-color));
+    
+    padding: 0 0.5rem;
+}
+
+.header img{
+    width: 100px;
+    margin-right:2rem ;
+}
+
+/* navbar */
+
+.navbar{
+    display: flex;
+    height: 60px;
+
+    background-color: rgb(var(--main-bg-color));
+    color: rgb(var(--main-color));
+    border-right:1px solid rgb(var(--border-color));
+}
+
+.navbar .link{
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    border-right:1px solid rgb(var(--border-color));
+    
+    padding: 0 0.25rem;
+    text-align: center;
+    
+    font-size: 1.1rem;
+    
+    cursor: pointer;
+    
+    
+}
+
+
+.navbar .link:hover, .navbar.link.active{
+    
+    background-color: rgb(var(--main-color));
+    color: rgb(var(--main-bg-color));
+    
+}
+
+
+
+
+.tabs{
+    display: flex;
+    justify-content: center;
+}
+
+.tab{
+    max-width: 1000px;
+    width: 100%;
+    
+    
+}
+
+.matches{
+    margin: 0.5rem;
+}
+
+.matches .stage{
+    margin: 1rem 0;
+}
+
+.matches .container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+    
+}
+.matches  .container .match-container
+{
+    flex: 50%;
+    border:1px solid rgb(var(--body-border-color));
+    max-width: 400px;
+    padding: 0.5rem;
+    border-radius: 5px;
+    margin: 0.5rem;
+}
+    
+    .matches .container .match-container .match
+    {
+        margin-top: 0.5rem;
+        display: flex;
+        align-items: center;
+        justify-content:space-around;
+    
+}
+.matches  .container .match-container:hover{
+   
+    background-color: rgb(var(--main-bg-color));
+    color: rgb(var(--main-color));
+}
+.score{
+    margin-left:  10px;
+}
+
+
+
+.match .team{
+    margin: -1.5rem 0;
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+
+.match .team .info{
+    display: flex;
+    align-items: center;
+}
+
+
+
+.flag{
+   width:24px ;
+   height: 24px; 
+
+   border: 1px solid rgb(var(--body-border-color));
+   border-radius: 5px;
+   
+   margin-right: 0.5rem;
+}
+
+.match .match-state{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-left: 1px solid rgb(var(--body-border-color));
+
+}
+span{
+    opacity: 0.6;
+}
+
+
+.standings{
+    max-width: 700px;
+    padding: 0.75rem;
+}
+
+.standings .group{
+    margin-bottom: 2rem;
+}
+.standings .group .group-title{
+    /* margin-bottom: 0.75rem; */
+}
+
+.standings .group .row{
+    display: flex;
+    margin: 0.5rem 0;
+}
+.standings .group .top .col{
+    
+    opacity: 0.6;
+}
+.standings .group .row .col{
+    width: 40px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin: 10px;
+    
+}
+.standings .group .row .main{
+    flex: 1;
+    justify-content: start;
+}
+.standings  .group .row .rank{
+    margin: 0 0.5rem;
+
+} 
+.standings .group .teams .row{
+    border-left: 4px solid transparent;
+} 
+/* .standings .group .teams .row:nth-child(1),
+    .standings .group .teams .row:nth-child(2){
+    
+} */
+.teams{
+    border: 1px solid rgb(241, 232, 232);
+}
+.Allflag{
+    display: flex;
+    border: 1px solid rgb(228, 223, 223);
+    /* margin: 40px; */
+}
+h4{
+    margin: 20px;
+}
+.Allflags{
+    
+    /* background-color: black; */
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    
+    border-right:1px solid rgb(var(--border-color));
+    
+    padding: 0 0.25rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-left: 1rem;
+    
+    
+
+}
+.Allflags>img{
+    height: 50%;
+    width: 20%;
+    justify-content:left;
+
+
+
+}
+
+
+
+.hide{
+    display: none;
+}
+
+
+ .team .info img{
+    /* width: 24%; */
+    height: 34%;
+}
+p{
+    font-style: normal;
+    font-size: 15px;
+    opacity: 0.6;
+} 
